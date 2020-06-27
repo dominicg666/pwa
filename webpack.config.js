@@ -1,6 +1,6 @@
 const {
   configureWebpack
-} = require('./buildpack');
+} = require('@baaz/buildpack');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const { DefinePlugin } = require('webpack');
 
