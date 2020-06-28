@@ -1,17 +1,18 @@
 import React, { Suspense, lazy } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, HashRouter } from 'react-router-dom';
 
-
+const Overview = lazy(() => import('../Overview'));
 
 const Routes = () => {
     return (
         <Suspense fallback={null}>
-            <Switch>
-                {/* <Route exact path="/search.html">
-                    <Search />
-                </Route> */}
-               
-            </Switch>
+            <HashRouter basename="/">
+                <Switch>
+                    <Route exact path="/">
+                        <Overview />
+                    </Route>
+                </Switch>
+            </HashRouter>
         </Suspense>
     );
 };

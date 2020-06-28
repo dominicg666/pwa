@@ -2,6 +2,7 @@ import React, { memo } from 'react';
 import { shape, string } from 'prop-types';
 import { useNavigation } from '../../Hooks/Navigation/useNavigation';
 import NavHeader from './navHeader';
+import { HashRouter, NavLink, resourceUrl } from '../../drivers/index';
 import './navigation.scss';
 
 const Navigation = props => {
@@ -26,17 +27,19 @@ const Navigation = props => {
                 />
             </header>
             <div className={bodyClassName} >
-                <ul className=" navbar-nav">
-                    <li className="nav-item">
-                        <a>Overview</a>
-                    </li>
-                    <li className="nav-item">
-                        <a>Basic Concepts</a>
-                    </li>
-                    <li className="nav-item">
-                        <a>PWA Buildpack</a>
-                    </li>
-                </ul>
+                <HashRouter basename="/">
+                    <ul className=" navbar-nav">
+                        <li className="nav-item">
+                            <NavLink activeClassName="active" to={resourceUrl('/')} onClick={handleClose} >Overview</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <a activeClassName="active" href="https://baazframework.github.io/#/environment-setup" onClick={handleClose}>Environment Setup</a>
+                        </li>
+                        <li className="nav-item">
+                            <a activeClassName="active" href="https://baazframework.github.io/#/cli" onClick={handleClose}>CLI Installation</a>
+                        </li>
+                    </ul>
+                </HashRouter>
             </div>
         </aside>
     );
