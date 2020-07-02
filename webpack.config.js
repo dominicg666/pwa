@@ -40,7 +40,7 @@ module.exports = async env => {
        * Make sure to add the same constants to
        * the globals object in jest.config.js.
        */
-      PWA_NAME: JSON.stringify('REACR PWA')
+      PWA_NAME: JSON.stringify('BAAZ PWA')
     }),
     new HtmlWebPackPlugin({
       template: "./template.html",
