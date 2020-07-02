@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import { bool, shape, string } from 'prop-types';
 import { useScrollLock } from '@baaz/adapter';
-import { mergeClasses } from '../../classify';
+import { mergeClasses } from 'buikit/classify';
 const Header = lazy(() => import('../Header'));
 // const Footer = lazy(() => import('../Footer'));
 import defaultClasses from './main.scss';

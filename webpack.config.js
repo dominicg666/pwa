@@ -1,6 +1,6 @@
 const {
   configureWebpack
-} = require('@baaz/buildpack'); 
+} = require('@baaz/buildpack');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const { DefinePlugin } = require('webpack');
 
@@ -20,7 +20,10 @@ module.exports = async env => {
       'redux-thunk'
     ],
     special: {
-
+      'buikit': {
+        cssModules: true,
+        esModules: true,
+      },
       '@baaz/adapter': {
         esModules: true,
         cssModules: true

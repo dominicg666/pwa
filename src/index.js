@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { Adapter } from './drivers';
+import { Adapter } from 'buikit-drivers';
 import store from './store';
 import app from '@baaz/adapter/store/actions/app';
 import App, { AppContextProvider } from './components/App';

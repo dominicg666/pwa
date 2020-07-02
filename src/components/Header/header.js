@@ -2,19 +2,16 @@ import React, { Suspense } from 'react';
 import { shape, string } from 'prop-types';
 
 import NavButon from './navButon';
-import { mergeClasses } from '../../classify';
 import defaultClasses from './header.scss';
 import {
     Mail as MessageIcon,
     Bell as AlertIcon,
     LogOut as LogOutIcon
 } from 'react-feather';
-import Icon from '../Icon'
+import Icon from 'buikit/lib/Icon'
 
 
 const Header = props => {
-
-    const classes = mergeClasses(defaultClasses, props.classes);
 
     return (
         <header className="header-root" >

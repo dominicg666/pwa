@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 import { useAppContext } from '@baaz/adapter/context/app';
-import { useHistory } from '../../drivers/index';
+import { useHistory } from 'buikit-drivers';
 
 
 export const useNavigation = props => {

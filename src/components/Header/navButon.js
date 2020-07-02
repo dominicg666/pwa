@@ -3,7 +3,7 @@ import { node, shape, string } from 'prop-types';
 import {
     Menu as MenuIcon
 } from 'react-feather';
-import Icon from '../Icon'
+import Icon from 'buikit/lib/Icon'
 import  './navButton.scss';
 import { useNavigationTrigger } from '../../Hooks/Header/useNavigationTrigger';
 

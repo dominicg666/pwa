@@ -2205,6 +2205,27 @@ buffer@^4.3.0:
     ieee754 "^1.1.4"
     isarray "^1.0.0"
 
+buikit-drivers@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/buikit-drivers/-/buikit-drivers-1.0.1.tgz#8a83e7c93a775cb296aabfe374438c9fab7c2b43"
+  integrity sha512-pTY7avjoxJqjTSmtM21DyS41qeGy/1SewqoPMIeJk/faJ6zuzf5+izhtH6jxIp0GDXu9l1me4UzeVNEDtEiUFA==
+  dependencies:
+    prop-types "^15.7.2"
+    react-redux "^7.2.0"
+    react-router-dom "^5.2.0"
+
+buikit@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/buikit/-/buikit-1.0.1.tgz#552b083b807c400a477488961e19ce294b00403f"
+  integrity sha512-ygSs9Iq90ZpJf/syYUvPl1XGzZw7htWQLzL4bVttgTgFsgszQwGmeYr9f02N39OABEnokOfGd+29Feg0LFZlZg==
+  dependencies:
+    informed "^3.9.0"
+    prop-types "^15.7.2"
+    react "^16.13.1"
+    react-dom "^16.13.1"
+    react-feather "^2.0.8"
+    react-head "^3.3.0"
+
 builtin-modules@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-3.1.0.tgz#aad97c15131eb76b65b50ef208e7584cd76a7484"

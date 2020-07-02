@@ -1,7 +1,5 @@
 import React from 'react';
 import './overview.scss';
-import { Link, resourceUrl } from '../../drivers/index'
-
 const BANNER = require("../../assets/img/banner.png").default;
 
 const Overview = props => {

@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 import { shape, string } from 'prop-types';
 import { useNavigation } from '../../Hooks/Navigation/useNavigation';
 import NavHeader from './navHeader';
-import { HashRouter, NavLink, resourceUrl } from '../../drivers/index';
+import { HashRouter, NavLink, resourceUrl } from 'buikit-drivers';
 import './navigation.scss';
 
 const Navigation = props => {

@@ -3,8 +3,8 @@ import { bool, func, shape, string } from 'prop-types';
 import {
     X as CloseIcon
 } from 'react-feather';
-import Icon from '../Icon';
-import Trigger from '../Trigger';
+import Icon from 'buikit/lib/Icon';
+import Trigger from 'buikit/lib/Trigger';
 import './navHeader.scss';
 import { useNavigationHeader } from '../../Hooks/Navigation/useNavigationHeader';
 

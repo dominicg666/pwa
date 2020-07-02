@@ -1,7 +1,7 @@
 import {
     VALID_SERVICE_WORKER_ENVIRONMENT,
     handleMessageFromSW
-} from './util/swUtils';
+} from 'buikit/util/swUtils';
 
 
 export const registerSW = () => {

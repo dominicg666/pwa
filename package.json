@@ -1,6 +1,6 @@
 {
   "name": "baazjs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "src/index.js",
   "scripts": {
     "build": "yarn run build:prod",
@@ -47,6 +47,7 @@
     "autoprefixer": "^9.8.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-dynamic-import-node": "~2.2.0",
+    "buikit": "^1.0.1",
     "css-loader": "^3.6.0",
     "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",
@@ -79,6 +80,7 @@
     "write-file-webpack-plugin": "^4.5.1"
   },
   "dependencies": {
+    "buikit-drivers": "^1.0.1",
     "react-feather": "^2.0.8"
   },
   "description": ""
