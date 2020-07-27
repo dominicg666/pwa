@@ -1,6 +1,8 @@
 import React from 'react';
 import './overview.scss';
 
+const BANNER = require("../../assets/img/banner.png").default;
+
 const Overview = props => {
     return (
         <div >
