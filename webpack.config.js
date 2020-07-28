@@ -1,11 +1,11 @@
 const {
   configureWebpack
-} = require('@baaz/buildpack');
+} = require('@baaz/buildpack'); 
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const { DefinePlugin } = require('webpack');
 
 
-module.exports = async env => {
+module.exports = async (env, argv = {}) => {
 
   const { clientConfig, serviceWorkerConfig } = await configureWebpack({
     context: __dirname,
@@ -29,7 +29,8 @@ module.exports = async env => {
         cssModules: true
       }
     },
-    env
+    env,
+    argv
   });
 
 
